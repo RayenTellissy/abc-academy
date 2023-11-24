@@ -26,7 +26,7 @@ const UpperHome = () => {
               placeholder="blur"
             />
           </div>
-          <Image src={Teacher} alt='teacher' className='rounded-[15px] shadow-image' height={200} />
+          <Image src={Teacher} alt='teacher' className='rounded-[15px] shadow-image' height={200} placeholder="blur" />
         </div>
         <div className='flex items-center select-none pointer-events-none'>
           <Image
@@ -34,6 +34,7 @@ const UpperHome = () => {
             alt='female student'
             className='rounded-[15px] shadow-image'
             height={250}
+            placeholder="blur"
           />
         </div>
       </div>
