@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "main": "Main",
+    "who_are_we": "Who are we?",
+    "teachers": "Our teachers",
+    "content": "Our content",
+    "blog": "Our blog",
+    "signup": "Sign up",
+    "login": "Login"
+  }
+}
