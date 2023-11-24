@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Outfit } from 'next/font/google'
+import { useLocale } from 'next-intl'
+import { Rubik } from 'next/font/google'
 
 import './globals.css'
 
-const outfit = Outfit({ subsets: ['latin'] })
+const font = Rubik({ subsets: ["arabic"]})
 
 export const metadata: Metadata = {
   title: 'ABC Academy',
@@ -17,10 +18,10 @@ export default function RootLayout({
   children: React.ReactNode,
   params: { locale: any }
 }) {
-
+  
   return (
     <html lang={locale}>
-      <body className={outfit.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   )
 }

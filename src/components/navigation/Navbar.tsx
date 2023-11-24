@@ -8,8 +8,11 @@ import NavbarLogo from "./svg/navbar-logo.svg"
 import SignupText from "./svg/signup-text.svg"
 import LoginText from "./svg/login-text.svg"
 
+// icons
+import { AlignJustify } from 'lucide-react';
+import NavLink from './components/NavLink';
+
 const Navbar = () => {
-  const t = useTranslations("navbar")
   const locale = useLocale()
 
   return (
@@ -30,14 +33,14 @@ const Navbar = () => {
           <Image src={SignupText} alt='signup text' height={15} />
         </Link>
       </div>
-      <div className='flex flex-row items-center gap-10'>
-        <Link href="/" className='text-navyblue font-bold hover:underline'>{t("blog")}</Link>
-        <Link href="/" className='text-navyblue font-bold hover:underline'>{t("content")}</Link>
-        <Link href="/" className='text-navyblue font-bold hover:underline'>{t("teachers")}</Link>
-        <Link href="/" className='text-navyblue font-bold hover:underline'>{t("who_are_we")}</Link>
-        <Link href="/" className='text-navyblue font-bold hover:underline'>{t("main")}</Link>
+      <div className='hidden md:flex flex-row items-center gap-10'>
+        <NavLink element={"blog"} route='/' />
+        <NavLink element={"content"} route='/' />
+        <NavLink element={"teachers"} route='/' />
+        <NavLink element={"who_are_we"} route='/' />
+        <NavLink element={"main"} route='/' />
       </div>
-      <div className='flex items-center p-4'>
+      <div className='flex items-center p-4 flex-shrink-0 cursor-pointer pointer-events-none select-none'>
         <Image src={NavbarLogo} alt='navbar logo' height={35} />
       </div>
     </div>

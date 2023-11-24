@@ -1,13 +1,14 @@
 import React from 'react';
-import { useTranslations } from 'next-intl';
+
+// components
+import UpperHome from './components/UpperHome';
 
 const Home = () => {
-  const t = useTranslations("navbar")
   
   return (
-    <div>
-      {t("main")}
-    </div>
+    <>
+      <UpperHome />
+    </>
   );
 };
 
