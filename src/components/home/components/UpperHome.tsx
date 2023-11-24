@@ -48,7 +48,7 @@ const UpperHome = () => {
           >
             {t("slogan")}
           </p>
-          <p className='text-center text-lg'>{t("description")}</p>
+          <p className='text-center xl:text-right text-lg'>{t("description")}</p>
         </div>
         <div className='w-full justify-center xl:justify-end flex flex-row gap-4 mt-2'>
           <Link
