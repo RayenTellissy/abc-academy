@@ -53,15 +53,15 @@ const UpperHome = () => {
         <div className='w-full justify-center xl:justify-end flex flex-row gap-4 mt-2'>
           <Link
             href="/login"
-            className="flex items-center rounded-[7px] border-2 border-orange text-orange text-xl font-bold px-[53px] py-3
-            hover:bg-orange hover:text-white transition-colors duration-200"
+            className="flex items-center rounded-[7px] border-2 border-orange text-orange text-xl font-bold
+            px-[15px] lg:px-[53px] py-3 hover:bg-orange hover:text-white transition-colors duration-200"
           >
             {t("advantages")}
           </Link>
           <Link
             href="/login"
-            className="flex items-center rounded-[7px] bg-orange text-white text-xl font-bold px-[53px] py-3
-            hover:bg-orange-hovered transition-colors duration-200"
+            className="flex items-center rounded-[7px] bg-orange text-white text-xl font-bold
+            px-[15px] lg:px-[53px] py-3 hover:bg-orange-hovered transition-colors duration-200"
           >
             {t("signup")}
           </Link>
