@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 // svg
 import HomeLogo from "../../images/home-logo.svg"
@@ -14,6 +14,7 @@ import Slogan from './Slogan';
 
 const UpperHome = () => {
   const t = useTranslations("home")
+  const locale = useLocale()
 
   return (
     <div className='flex flex-row justify-between p-8 md:p-20 gap-3'>
@@ -47,7 +48,7 @@ const UpperHome = () => {
         </div>
         <div className='w-full xl:w-[80%]'>
           <Slogan text={t("slogan")} />
-          <p className='text-center xl:text-left text-lg'>{t("description")}</p>
+          <p className={`text-center xl:${locale === "ar" ? "text-end" : "text-left"} text-lg`}>{t("description")}</p>
         </div>
         <div className='w-full justify-center xl:justify-end flex flex-row gap-4 mt-2'>
           <Link
