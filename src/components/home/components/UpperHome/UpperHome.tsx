@@ -15,6 +15,7 @@ import Slogan from './Slogan';
 const UpperHome = () => {
   const t = useTranslations("home")
   const locale = useLocale()
+  console.log(locale)
 
   return (
     <div className='flex flex-row justify-between p-8 md:p-20 gap-3'>
