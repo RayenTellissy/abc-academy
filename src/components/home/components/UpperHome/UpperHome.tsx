@@ -11,11 +11,11 @@ import Teacher from "../../images/teacher.jpg"
 
 // components
 import Slogan from './Slogan';
+import Description from './Description';
 
 const UpperHome = () => {
   const t = useTranslations("home")
   const locale = useLocale()
-  console.log(locale)
 
   return (
     <div className='flex flex-row justify-between p-8 md:p-20 gap-3'>
@@ -49,18 +49,18 @@ const UpperHome = () => {
         </div>
         <div className='w-full xl:w-[80%]'>
           <Slogan text={t("slogan")} />
-          <p className={`text-center xl:${locale === "ar" ? "text-end" : "text-left"} text-lg`}>{t("description")}</p>
+          <Description text={t("description")} />
         </div>
         <div className='w-full justify-center xl:justify-end flex flex-row gap-4 mt-2'>
           <Link
-            href="/login"
+            href={`/${locale}/advantages`}
             className="flex items-center rounded-[7px] border-2 border-orange text-orange text-xl font-bold
             px-[15px] md:px-[53px] py-3 hover:bg-orange hover:text-white transition-colors duration-200 text-center"
           >
             {t("advantages")}
           </Link>
           <Link
-            href="/login"
+            href={`/${locale}/signup`}
             className="flex items-center rounded-[7px] bg-orange text-white text-xl font-bold
             px-[15px] md:px-[53px] py-3 hover:bg-orange-hovered transition-colors duration-200 text-center"
           >
