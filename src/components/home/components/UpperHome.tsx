@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 // svg
 import HomeLogo from "../images/home-logo.svg"
@@ -11,6 +11,7 @@ import Teacher from "../images/teacher.jpg"
 
 const UpperHome = () => {
   const t = useTranslations("home")
+  const locale = useLocale()
 
   return (
     <div className='flex flex-row justify-between p-8 md:p-20 gap-3'>
@@ -43,25 +44,24 @@ const UpperHome = () => {
           <Image src={HomeLogo} alt='home logo' height={100} />
         </div>
         <div className='w-full xl:w-[80%]'>
-          <p className='text-center text-[40px] md:text-[50px] xl:text-end xl:text-[70px]
-           text-navyblue font-bold'
+          <p className={`text-center text-[40px] md:text-[50px] xl:${locale === "ar" ? "text-right" : "text-left"} xl:text-[70px] text-navyblue font-bold`}
           >
             {t("slogan")}
           </p>
-          <p className='text-center xl:text-right text-lg'>{t("description")}</p>
+          <p className={`text-center xl:${locale === "ar" ? "text-right" : "text-left"} text-lg`}>{t("description")}</p>
         </div>
         <div className='w-full justify-center xl:justify-end flex flex-row gap-4 mt-2'>
           <Link
             href="/login"
             className="flex items-center rounded-[7px] border-2 border-orange text-orange text-xl font-bold
-            px-[15px] md:px-[53px] py-3 hover:bg-orange hover:text-white transition-colors duration-200"
+            px-[15px] md:px-[53px] py-3 hover:bg-orange hover:text-white transition-colors duration-200 text-center"
           >
             {t("advantages")}
           </Link>
           <Link
             href="/login"
             className="flex items-center rounded-[7px] bg-orange text-white text-xl font-bold
-            px-[15px] md:px-[53px] py-3 hover:bg-orange-hovered transition-colors duration-200"
+            px-[15px] md:px-[53px] py-3 hover:bg-orange-hovered transition-colors duration-200 text-center"
           >
             {t("signup")}
           </Link>

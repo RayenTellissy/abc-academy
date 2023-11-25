@@ -1,5 +1,19 @@
 {
   "navbar": {
-    
+    "main": "Accueil",
+    "who_are_we": "Qui sommes-nous ?",
+    "teachers": "Nos enseignants",
+    "content": "Notre contenu",
+    "blog": "Notre blog",
+    "signup": "Inscrivez-vous",
+    "login": "Connexion"
+  },
+  "home": {
+    "slogan": "Notre ambition renforce la confiance et le développement des étudiants",
+    "description": "Grâce à notre plateforme éducative avancée, les étudiants peuvent bénéficier de cours de soutien en ligne dans toutes les matières et à différents niveaux académiques (élémentaire, moyen et secondaire). Cela garantit leur développement académique et personnel, les aidant à réussir dans leurs parcours éducatifs et professionnels futurs.",
+    "signup": "Inscrivez-vous maintenant",
+    "advantages": "Nos avantages",
+    "middle_title": "|‎ ‎ Qu'est-ce que l'Académie ABC ?",
+    "middle_description": "Bienvenue sur notre plateforme d'apprentissage en ligne ! Nous sommes fiers de fournir un environnement éducatif innovant et avancé pour les étudiants. Nous croyons en l'importance de l'apprentissage continu et nous nous efforçons d'offrir un contenu de haute qualité et une expérience d'apprentissage agréable. Que vous recherchiez des cours éducatifs intensifs ou des leçons interactives dans divers domaines, nous mettons à votre disposition tout ce dont vous avez besoin pour atteindre vos objectifs éducatifs. Rejoignez-nous aujourd'hui et préparez-vous à une expérience d'apprentissage exceptionnelle !"
   }
 }

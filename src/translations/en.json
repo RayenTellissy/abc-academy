@@ -7,5 +7,13 @@
     "blog": "Our blog",
     "signup": "Sign up",
     "login": "Login"
+  },
+  "home": {
+    "slogan": "Our Ambition Builds Confidence and Development for Students",
+    "description": "Through our advanced educational platform, students can benefit from online support lessons in all subjects and at various academic levels (elementary, middle, and high school). This ensures academic and personal development, enabling them to succeed in their future educational and professional paths.",
+    "signup": "Sign Up Now",
+    "advantages": "Our Advantages",
+    "middle_title": "|‎ ‎ What is ABC Academy?",
+    "middle_description": "Welcome to our online learning platform! We are proud to provide an innovative and advanced educational environment for students. We believe in the importance of continuous learning and strive to offer high-quality content and an enjoyable learning experience. Whether you are looking for intensive educational courses or interactive lessons in various fields, we provide everything you need to achieve your educational goals. Join us today and get ready for an exceptional learning experience!"
   }
 }
