@@ -9,7 +9,7 @@ const MiddleHome = () => {
   const t = useTranslations("home")
 
   return (
-    <div className='h-[800px] bg-navyblue p-12 flex flex-col gap-[4rem]'>
+    <div className='bg-navyblue p-12 flex flex-col gap-[4rem]'>
       <div className='flex justify-center'>
         <p className='text-white font-bold sm:text-[50px] text-2xl whitespace-nowrap'>
           {t("middle_title")}

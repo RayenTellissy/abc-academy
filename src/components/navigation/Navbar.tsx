@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className='flex flex-row justify-between  px-[20px] md:px-[70px]'>
-      <div className='lg:hidden flex p-4 flex-shrink-0 cursor-pointer pointer-events-none select-none'>
+      <div className='lg:hidden flex p-4 flex-shrink-0 cursor-pointer select-none'>
         <Image src={NavbarLogo} alt='navbar logo' height={35} />
       </div>
       <div className='flex flex-row items-center p-5 gap-3'>
@@ -28,7 +28,7 @@ const Navbar = () => {
           {t("login")}
         </Link>
         <Link
-          href="/signup"
+          href={`/${locale}/signup`}
           className="hidden lg:flex items-center rounded-[7px] bg-orange px-4 h-[40px] text-white
           hover:bg-orange-hovered transition-colors duration-200 font-bold whitespace-nowrap"
         >
@@ -42,7 +42,7 @@ const Navbar = () => {
         <NavLink element={"who_are_we"} route='/' />
         <NavLink element={"main"} route='/' />
       </div>
-      <div className='hidden lg:flex p-4 flex-shrink-0 cursor-pointer pointer-events-none select-none'>
+      <div className='hidden lg:flex p-4 flex-shrink-0 cursor-pointer select-none'>
         <Image src={NavbarLogo} alt='navbar logo' height={35} />
       </div>
       <div className='lg:hidden flex p-4'>
