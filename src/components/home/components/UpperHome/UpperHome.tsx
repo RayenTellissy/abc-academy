@@ -44,11 +44,11 @@ const UpperHome = () => {
           <Image src={HomeLogo} alt='home logo' height={100} />
         </div>
         <div className='w-full xl:w-[80%]'>
-          <p className={`text-center text-[40px] md:text-[50px] xl:${locale === "ar" ? "text-right" : "text-left"} xl:text-[70px] text-navyblue font-bold`}
+          <p className={`text-center xl:text-left text-[40px] md:text-[50px] xl:text-[70px] text-navyblue font-bold`}
           >
             {t("slogan")}
           </p>
-          <p className={`text-center xl:${locale === "ar" ? "text-right" : "text-left"} text-lg`}>{t("description")}</p>
+          <p className={`text-center xl:text-left text-lg`}>{t("description")}</p>
         </div>
         <div className='w-full justify-center xl:justify-end flex flex-row gap-4 mt-2'>
           <Link
