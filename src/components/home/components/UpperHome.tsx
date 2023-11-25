@@ -5,9 +5,9 @@ import { useTranslations } from 'next-intl';
 
 // svg
 import HomeLogo from "../images/home-logo.svg"
-import KidMale from "../images/kid-male.png"
-import KidFemale from "../images/kid-female.png"
-import Teacher from "../images/teacher.png"
+import KidMale from "../images/kid-male.jpg"
+import KidFemale from "../images/kid-female.jpg"
+import Teacher from "../images/teacher.jpg"
 
 const UpperHome = () => {
   const t = useTranslations("home")
@@ -54,14 +54,14 @@ const UpperHome = () => {
           <Link
             href="/login"
             className="flex items-center rounded-[7px] border-2 border-orange text-orange text-xl font-bold
-            px-[15px] lg:px-[53px] py-3 hover:bg-orange hover:text-white transition-colors duration-200"
+            px-[15px] md:px-[53px] py-3 hover:bg-orange hover:text-white transition-colors duration-200"
           >
             {t("advantages")}
           </Link>
           <Link
             href="/login"
             className="flex items-center rounded-[7px] bg-orange text-white text-xl font-bold
-            px-[15px] lg:px-[53px] py-3 hover:bg-orange-hovered transition-colors duration-200"
+            px-[15px] md:px-[53px] py-3 hover:bg-orange-hovered transition-colors duration-200"
           >
             {t("signup")}
           </Link>
